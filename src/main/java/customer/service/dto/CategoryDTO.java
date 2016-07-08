@@ -1,0 +1,20 @@
+package customer.service.dto;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+/**
+ * Created by roman rasskazov on 11.06.2015.
+ */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CategoryDTO {
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
